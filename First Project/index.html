@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    
+    <div class="container">
+        <p class="height">Temperature Converter</p>
+        <div class="input-div">
+            <label>Degree Celsius :</label>
+            <input type="number" value="0" id="cel" class="input">
+        </div>
+        <div class="input-div">
+            <label>Fahrenheit :</label>
+            <input type="number" value="32" id="fah" class="input">
+        </div>
+    </div>
+
+    <script>
+        let cel = document.getElementById("cel");
+        let fah = document.getElementById("fah");
+
+        cel.addEventListener('input', function(){
+            let c = this.value;
+            let f = (c * 9/5) + 32;
+            fah.value = f;
+        });
+        fah.addEventListener('input', function(){
+            let f = this.value;
+            let c = (f - 32) * 5/9;
+            cel.value = c;
+        });
+    </script>
+</body>
+</html>
