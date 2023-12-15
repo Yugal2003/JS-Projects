@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>WORD AND CHARACTER COUNTER</title>
+</head>
+<body>
+    <h1>WORD AND CHARACTER COUNTER</h1>
+    <textarea id="textbox" cols="45" rows="12"></textarea>
+    <p>
+        <span id="word">0</span>&nbsp;&nbsp; WORD &nbsp; & &nbsp;
+        <span id="char">0</span>&nbsp;&nbsp; CHARACTERS
+    </p>
+
+    <script>
+        let textbox = document.getElementById("textbox");
+
+        textbox.addEventListener('input', function(){
+            let text = this.value;
+            let char  = text.length;
+            document.getElementById("char").innerHTML = char;
+
+            text = text.trim();
+            let word = text.split(" ");
+            let wordlist = word.filter(function(element){
+                return element != "";
+            });
+            document.getElementById("word").innerHTML = wordlist.length;
+        });
+    </script>
+</body>
+</html>
