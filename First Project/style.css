@@ -13,7 +13,7 @@ body{
 }
 .container{
     height: 300px;
-      border: 5px dashed black
+    border: 5px dashed black
 }
 label{
     color:black;
@@ -35,4 +35,47 @@ label{
 }
 input{
     border: 3px solid black;
+}
+
+@media screen and (min-width:320px) and (max-width:767px){
+    .container {
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 450px;
+        border: 5px dashed black;
+    }
+    .height {
+        margin: 50px 50px;
+        background-color: rgb(255, 0, 0);
+        color: yellow;
+        font-size: 35px;
+        font-weight: 900;
+    }
+    body {
+        padding: 0px;
+        background-color: yellow;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:768px)  and (max-width:1400px){
+    .container {
+        width: 600px;
+        height: 500px;
+        border: 5px dashed black;
+    }
+    .height {
+        padding: 10px;
+        margin: 50px 50px;
+        background-color: rgb(255, 0, 0);
+        color: yellow;
+        font-size: 35px;
+        font-weight: 900;
+    }
+    body {
+        background-color: yellow;
+        padding: 100px;
+        text-align: center;
+    }
 }
