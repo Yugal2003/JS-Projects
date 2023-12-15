@@ -1,5 +1,5 @@
-https://yugal2003.github.io/JS-Projects/
+HOSTED LINK -> https://yugal2003.github.io/JS-Projects/
 
-BEFORE OPEN THIS ABOVE LINK YOU CAN JOIN FOLDER NAME AFTER https://yugal2003.github.io/JS-Projects/_ _ _ (hear) _ _ _
+NOTE -> BEFORE OPEN THIS ABOVE LINK YOU CAN JOIN FOLDER NAME AFTER https://yugal2003.github.io/JS-Projects/_ (hear) _ 
 
-EX : https://yugal2003.github.io/JS-Projects/
+EX : https://yugal2003.github.io/JS-Projects/First Project
