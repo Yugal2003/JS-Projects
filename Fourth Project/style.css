@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: yellow;
+}
+#form-container{
+    box-shadow: 20px 20px 15px rgb(64, 52, 52);
+    border-radius: 12px;
+    font-weight:bold;
+    background-color: black;
+    color: cyan;
+    height: 330px;
+    /* border: 2px solid red; */
+    margin: 150px 550px;
+    text-align: center;
+}
+.error{
+    text-align: left;
+    margin:7px 110px;
+    padding: 2px 2px 2px 0px;
+    width: 160px;
+    /* border: 2px solid grey; */
+    position: absolute;
+    color: white;
+}
+h1{
+    color: red;
+    padding-top: 20px;
+    margin-top: 30px;
+}
+form{
+    margin-top: 30px;
+}
+#Username{
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: rgb(218, 211, 35);
+    color: red;
+    width: 220px;
+    padding:  15px 15px 15px 3px;
+    border: 3px solid red;
+}
+#Password{
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: rgb(218, 211, 35);
+    color: red;
+    width: 220px;
+    margin-top: 40px;
+    padding: 15px 15px 15px 3px;
+    border: 3px solid red;
+}
+.sub{
+    cursor: pointer;
+    border: 3px solid grey;
+    font-weight: bold;
+    font-size: 20px;
+    color: red;
+    background-color: rgb(218, 211, 35);
+    border-radius: 8px;
+    width: 100px;
+    margin-top: 45px;
+    padding: 5px;
+}
+
+/* media query start */
+@media screen and (min-width:320px) and (max-width:767px){
+    body {
+        height: 500px;
+        width: 1000px;
+    }
+    #form-container {
+        margin: 200px;
+        height: 400px;
+        width: 600px;
+    }
+}
+
+@media screen and (min-width:768px)  and (max-width:1535px){
+    body {
+        height: 500px;
+        width: 1000px;
+    }
+    #form-container {
+        margin: 200px;
+        height: 400px;
+        width: 600px;
+    }
+}
+/* media query end */

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validation Using JS</title>
+</head>
+<body>
+    <div id="form-container">
+        <h1>LOGIN</h1>
+        <form action="" onsubmit="return validate()">
+            <input type="text" placeholder="Your Name" id="Username"><br>
+            <p id="usererror" class="error"></p>
+            <input type="password" placeholder="Password" id="Password"><br>
+            <p id="passerror" class="error"></p>
+            <input type="submit" class="sub">
+        </form>
+    </div>
+
+    <script>
+        let username = document.getElementById("Username");
+        let password = document.getElementById("Password");
+        let flag = 1;
+        function validate(){
+            if(username.value == ""){
+                document.getElementById("usererror").innerHTML = "UserName Is Empty";
+                flag = 0;
+            }
+            else if(username.value.length < 3){
+                document.getElementById("usererror").innerHTML = "*Require Min 3 Char";
+                flag = 0;
+            }
+            else{
+                document.getElementById("usererror").innerHTML = "";
+                flag = 1;
+            }
+
+            if(password.value == ""){
+                document.getElementById("passerror").innerHTML = "*Password Is Empty";
+                flag = 0;
+            }
+            
+            else{
+                document.getElementById("passerror").innerHTML = "";
+                
+            }
+            if(flag){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
