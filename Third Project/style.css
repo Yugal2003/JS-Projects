@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    margin: 40px 250px;
+}
+h1{
+    text-align: center;
+}
+p{
+    margin: 10px 250px;
+}
+.btn{
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 3px solid rgb(161, 71, 128);
+    cursor: pointer;
+}
+#white{
+    background-color: white;
+}
+#yellow{
+    background-color: yellow;
+}
+#cyan{
+    background-color: cyan;
+}
+#black{
+    background-color: black;
+}
+#violet{
+    background-color: #ce9aff;
+}
+#color-picker{
+    text-align: right;
+    margin: 30px 50px;
+}
