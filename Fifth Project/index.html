@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Image Slider</title>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="slide">
+            <img src="img/pexels-askar-abayev-5638601.jpg" alt="" class="ima"> 
+            <div class="context">Image No 1</div>
+        </div>
+        <div class="slide">
+            <img src="img/pexels-blue-bird-7210293.jpg" alt="" class="ima">
+            <div class="context">Image No 2</div>
+        </div>
+        <div class="slide">
+            <img src="img/pexels-ketut-subiyanto-4349917.jpg" alt="" class="ima">
+            <div class="context">Image No 3</div>
+        </div>
+        <div class="slide">
+            <img src="img/pexels-monstera-production-5876531.jpg" alt="" class="ima">
+            <div class="context">Image No 4</div>
+        </div>
+        <div class="slide">
+            <img src="img/pexels-sarah-chai-7266832.jpg" alt="" class="ima">
+            <div class="context">Image No 5</div>
+        </div>
+
+        <span class="arrow prev" onclick="controller(-1)">&#10094;</span>
+        <span class="arrow next" onclick="controller(1)">&#10095;</span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
