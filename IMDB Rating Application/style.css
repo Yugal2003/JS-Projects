@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Tektur:wght@400..900&display=swap');
+
+/* navbar start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    height: 4rem;
+    justify-content: space-between;
+    background-color: rgb(72, 73, 75);
+}
+h1{
+    padding: 10px 10px 10px 80px;
+    color: white;
+}
+.search-bar{
+    padding: 25px;
+}
+.search-bar input{
+    border: none;
+    border-radius: 3px 0px 0px 3px;
+    font-size: 16px;
+    padding: 3px;
+}
+.search-bar button{
+    border: none;
+    border-radius: 0px 3px 3px 0px;
+    cursor: pointer;
+    background-color: orange;
+    font-size: 16px;
+    padding: 3px;
+    color: white;
+    transition: 0.2s;
+}
+.search-bar button:hover{
+    background-color: rgb(202, 142, 32);
+}
+
+/* navbar end */
+/* main sec start */
+.container{
+    display: flex;
+    background-color: beige;
+    min-height: 600px;
+}
+.movie-genre{
+    display: flex;
+}
+.movie-conatiner{
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.movie_title_imd{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+.movie-poster{
+    padding: 4rem 5rem;
+}
+.movie-poster img{
+    border-radius: 20px;
+}
+/* main sec end */
+/* footer start */
+.footer{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    height: 73px;
+    background-color: rgb(72, 73, 75);
+}
+h3{
+    padding-top: 5px;
+    font-size: 20px;
+    color: white;
+}
+a{
+    text-align: center;
+    font-size: 17px;
+    padding-top: 5px;
+    margin-left: 2rem;
+    color: cyan;
+    text-shadow: 0.7px 0.7px 10px yellow;
+    text-decoration: none;
+}
+
+/* footer end */
