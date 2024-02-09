@@ -29,9 +29,10 @@ const showmovieData = (data) =>{
     const movieGenreElement = document.createElement('div');
     movieGenreElement.classList.add('movie-genre');
 
-    Genre.split(",").forEach(element =>{// all element in genre key use via foreach loop
+    Genre.split(" , ").forEach(element =>{// all element in genre key use via foreach loop
         const p = document.createElement('p');
-        p.innerHTML = element;
+        p.innerHTML = `
+        <p><strong>Genre: </strong>${element}</p>`;
         movieGenreElement.appendChild(p);
     });
 
